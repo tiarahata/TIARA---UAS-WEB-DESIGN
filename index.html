@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAS</title>
+    <link rel="stylesheet" href="uas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="nav">
+      <div class="tengah">
+        <ul>
+          <li>
+            <a class="klik" href="#">BERANDA</a>
+          </li>
+          <li>
+            <a class="klik" href="#tentang">TENTANG</a>
+          </li>
+          <li>
+            <a class="klik" href="#layanan">LAYANAN</a>
+          </li>
+          <li>
+            <a class="klik" href="#katamereka">KATA MEREKA</a>
+          </li>
+          <li>
+            <a class="klik" href="#featured">FEATURED ON</a>
+          </li>
+          <li>
+            <a class="klik" href="#kontak">KONTAK</a>
+          </li>
+        </ul>
+      </div>
+      <div class="wid-760">
+        <div href="" onclick="myFunction(this)" class="arrow">
+          <i class="fa fa-caret-up rotate"></i>
+        </div>
+        <div class="navclick">
+          <a href="#tentang">TENTANG</a>
+          <a href="#layanan">LAYANAN</a>
+          <a href="#katamereka">KATA MEREKA</a>
+          <a href="#featured">FEATURED ON</a>
+          <a href="#kontak">KONTAK</a>
+        </div>
+      </div>
+      <div class="bagkanan">
+        <button onclick="klik()">
+          <img src="icons/add.png" alt="join" width="17px" />
+          <p>JOIN</p>
+        </button>
+      </div>
+    </nav>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      let execute = document.getElementById("navclick");
+      for (let i = 0; i < acc.length; i++) {
+        execute[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <!-- navigation -->
+
+    <!-- div1 -->
+    <div class="div-satu">
+      <img src="photos/div1.jpg" alt="div1" />
+      <div class="judul">
+        Foto Terbaik Anda <br />
+        Bisa Jadi Cuan Hanya <br />
+        di
+        <h1>carifoto</h1>
+        <h2>
+          Carifoto merupakan platform dimana anda dapat <br />
+          mendapatkan uang dengan hanya mengupload foto <br />
+          terbaik Anda di website kami, dan biarkan kami <br />
+          yang membuat Anda mendapatkan cuan.
+        </h2>
+      </div>
+    </div>
+    <!-- div1 -->
+
+    <!-- div2 -->
+    <div class="div-dua">
+      <h1 id="tentang">Kenapa carifoto?</h1>
+      <p class="cari-foto">
+        Carifoto adalah sebuah platform dimana orang dapat mendownload foto
+        terbaik pilihan mereka <br />
+        secara gratis dan berbayar. Bagi photographer mereka akan mendapatkan
+        imbalan berupa uang <br />
+        baik dari penjualan foto kebutuhan komersil atau bahkan dari seberapa
+        banyak foto mereka di <br />
+        download dan dilihat oleh pengunjung.
+      </p>
+      <div class="kotak">
+        <div class="satu">
+          <img
+            src="icons/medal.png"
+            alt="medali"
+            width="100px"
+            height="100px"
+          />
+          <p>
+            Masuk ke 50 besar website dengan <br />
+            average visit /day tertinggi (versi <br />
+            similarweb.com)
+          </p>
+        </div>
+        <div class="satu">
+          <img
+            src="icons/kontributor.png"
+            alt="kontributor"
+            width="100px"
+            height="100px"
+          />
+          <p>
+            Memiliki 12.000 User & 5.000 <br />
+            Kontributor di seluruh indonesia
+          </p>
+        </div>
+        <div class="satu">
+          <img
+            src="icons/pendapatan.png"
+            alt="pendapatan"
+            width="100px"
+            height="100px"
+          />
+          <p>
+            Rata - rata penghasilan user yaitu <br />
+            200.000/bulan, dan 500.000/bulan <br />
+            untuk kontributor
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- div2 -->
+
+    <!-- div3 -->
+    <div class="div-tiga">
+      <h1 class="la" id="layanan">LAYANAN</h1>
+      <p class="berikut-layanan">
+        Berikut layanan dari Carifoto berserta cara kerjanya.
+      </p>
+      <div class="kotak">
+        <div class="dua-kotak">
+          <h1>CUAN DARI KOIN</h1>
+          <p class="layanan-cuan">
+            Layanan cuan dari koin artinya kamu bisa di bayar dengan menukarkan
+            koin yang kamu dapat dari berapa jumlah pengunjung yang telah
+            mendownload foto kamu.
+          </p>
+          <div class="koin">
+            <img src="icons/coins.png" alt="koin" width="50px" />
+            <div class="text-koin"><p>1 Koin = Rp. 1</p></div>
+          </div>
+          <div class="langkah-koin">
+            <div class="download">
+              <div class="img-garis">
+                <img src="icons/downloading.png" alt="download" width="40px" />
+                <div class="garis">-----------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="uang-text">
+                <p>
+                  Berikut ketentuan jumlah koin yang bisa di cairkan menjadi
+                  rupiah
+                </p>
+                <p>
+                  100 download = 5.000 koin <br />
+                  500 download = 25.000 koin <br />
+                  1.000 download = 50.000 koin <br />
+                  10.000 download = 500.000 koin <br />
+                  100.000 download = 5.000.000 koin
+                </p>
+              </div>
+            </div>
+
+            <div class="dompet">
+              <div class="img-garis">
+                <img src="icons/wallet.png" alt="dompet" width="40px" />
+                <div class="garis">-------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <p>
+                Untuk melakukan pencairan dana, kamu bisa hubungi kami ke
+                whatsapp yang tertera di website Carifoto. Koin dapat di cairkan
+                jika jumlah sudah sesuai seperti ketentuan
+              </p>
+            </div>
+            <div class="uang">
+              <div class="img-garis">
+                <img src="icons/money.png" alt="transfer" width="40px" />
+              </div>
+              <p>
+                Setelah kamu mengisi form pencairan dana, dana akan masuk ke
+                rekening mu 1x24 jam. Dan jika ada kendala call center kami siap
+                membantu sampai tuntas
+              </p>
+            </div>
+
+            <div class="teks-satu">
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="garis-tengah"></div>
+        <div class="dua-kotak">
+          <h1>CUAN FOTO BERBAYAR</h1>
+          <p class="layanan-cuan">
+            Layanan cuan foto berbayar membuat kamu bisa mendapatkan uang jika
+            foto kamu terjual untuk tujuan komersil, dan jika pengguna mau
+            download foto dengan resolusi penuh
+          </p>
+          <div class="langkah-koin">
+            <div class="dompet margin-6-kotak">
+              <div class="img-garis">
+                <img src="icons/member-card.png" alt="dompet" width="40px" />
+                <div class="garis">-------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <p>
+                Langkah pertama kamu harus daftarkan diri menjadi kontributor
+                untuk dapat menjual foto di Carifoto
+              </p>
+            </div>
+            <div class="dompet margin-6-kotak">
+              <div class="img-garis">
+                <img src="icons/file-upload.png" alt="dompet" width="40px" />
+                <div class="garis">-------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <p>
+                Jika kamu sudah menjadi kontributor, dan ingin menjual foto,
+                langkah pertama kamu upload foto beserta deskripsi dan harga
+                jual di laman khusus kontributor, lalu tunggu kami verifikasi
+              </p>
+            </div>
+            <div class="dompet margin-6-kotak">
+              <div class="img-garis">
+                <img
+                  src="icons/data-processing.png"
+                  alt="dompet"
+                  width="40px"
+                />
+                <div class="garis">-------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <p>
+                Foto akan masuk tahap verifikasi sistem, berikut kami berikan
+                revisi/pemberitahuan jika foto tidak sesuai dengan ketentuan
+              </p>
+            </div>
+            <div class="dompet margin-6-kotak">
+              <div class="img-garis">
+                <img src="icons/checklist.png" alt="dompet" width="40px" />
+                <div class="garis">-------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <p>
+                Foto akan langsung tayang pada laman Carifoto jika sudah selesai
+                dalam tahap verifikasi
+              </p>
+            </div>
+            <div class="dompet margin-6-kotak">
+              <div class="img-garis">
+                <img src="icons/notification.png" alt="dompet" width="40px" />
+                <div class="garis">-------</div>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <p>
+                Jika foto berhasil terjual, kami akan berikan notifikasi pada
+                email yang kamu daftarkan, beserta form pencairan dana
+              </p>
+            </div>
+            <div class="uang margin-6-kotak">
+              <div class="img-garis">
+                <img src="icons/money.png" alt="transfer" width="40px" />
+              </div>
+              <p>
+                Dana akan masuk ke rekening mu 1x24 jam. Dan jika ada kendala
+                admin whatsapp kami siap membantu sampai tuntas
+              </p>
+            </div>
+
+            <div class="teks-satu">
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/6289519690349" target="_blank">
+        <div class="join-wa">
+          <img src="photos/whatsapp.png" alt="wa" />
+          <h2>JOIN CARIFOTO SEKARANG</h2>
+        </div>
+      </a>
+    </div>
+    <!-- div3 -->
+
+    <!-- div4 -->
+    <div class="div-empat">
+      <div class="sub-judul" id="katamereka">Kata Mereka</div>
+      <div class="bungkus-tiga-kotak">
+        <div class="kotak-kembar">
+          <div class="kotak-jabatan">
+            <div class="kotak-img">
+              <img src="photos/media-indonesia.jpg" alt="" />
+            </div>
+            <div class="kotak-judul">
+              <h3>Social Media Officer</h3>
+              <p>Media Indonesia</p>
+            </div>
+          </div>
+          <div class="kotak-quote">
+            <span>&#10077;</span>
+            <p>
+              “Foto berbayar yang tersedia di Carifoto sangat beragam, kami
+              banyak menggunakannya untuk keperluan background foto konten
+              harian kami di instagram. Untuk pelayanan customer servicenya
+              cepat dan sangat membantu disaat kami minta saran untuk gambar
+              yang memiliki kemiripan.”
+            </p>
+          </div>
+        </div>
+        <div class="kotak-kembar">
+          <div class="kotak-jabatan">
+            <div class="kotak-img">
+              <img src="photos/lokernas.png" alt="" />
+            </div>
+            <div class="kotak-judul">
+              <h3>Social Media Marketing</h3>
+              <p>Lokernas</p>
+            </div>
+          </div>
+          <div class="kotak-quote">
+            <span>&#10077;</span>
+            “Kami berlangganan stok foto di Carifoto untuk keperluan advertising
+            kami , karena pilihan gambarnya banyak dari jenis foto premium untuk
+            iklan maupun jenis foto untuk daily content kami”
+          </div>
+        </div>
+        <div class="kotak-kembar">
+          <div class="kotak-jabatan">
+            <div class="kotak-img">
+              <img src="photos/photographer.jpg" alt="" />
+            </div>
+            <div class="kotak-judul">
+              <h3>Photographer</h3>
+              <p>Roman Santoso</p>
+            </div>
+          </div>
+          <div class="kotak-quote">
+            <span>&#10077;</span>
+            “Saya sebagai seorang fotografer amatir sangat terbantu dengan
+            adanya Carifoto, karena pengunjung web ini memiliki kebutuhan
+            terhadap jenis foto yang beragam, bahkan foto yang dihasilkan dari
+            handphone saya pun selalu mendapat jumlah download yang tinggi.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div4 -->
+
+    <!-- div5 -->
+    <div class="div-lima">
+      <h2 id="featured">FEATURED ON</h2>
+      <p>Carifoto telah di liput oleh beberapa media berikut.</p>
+      <img src="photos/featured on.png" alt="featured on" />
+    </div>
+    <!-- div5 -->
+    <!-- footer -->
+    <div class="footer" id="kontak">
+      <div class="kontak">
+        <div class="kotak-1">
+          <img src="photos/Group 3.png" alt="" />
+          <p>
+            Cari foto merupakan platform penyedia foto terlengkap dan beragam
+            dengan 5 juta foto pilihan.
+          </p>
+        </div>
+        <div class="kotak-2">
+          <h2>PERUSAHAAN</h2>
+          <p><a href="#">Beranda</a></p>
+          <p><a href="#tentang">Tentang</a></p>
+          <p><a href="#layanan">Layanan</a></p>
+          <p><a href="#katamereka">Kata Mereka</a></p>
+          <p><a href="#featured">Diliput Oleh</a></p>
+          <p><a href="#kontak">Kontak</a></p>
+          <p><a href="https://wa.me/6289519690349" target="_blank">JOIN</a></p>
+        </div>
+        <div class="kotak-3">
+          <h2>LOKASI</h2>
+          <p>Jl. Terusan Buah Batu No.33, Kota Bandung, Jawa Barat 40266</p>
+        </div>
+        <div class="kotak-4">
+          <h2>HUBUNGI KAMI</h2>
+          <a href="https://wa.me/6289519690349" target="_blank"
+            ><img src="photos/whatsapp.png" alt="whatsapp"
+          /></a>
+          <div class="akun-sosmed">
+            <div>
+              <a href="mailto:permatatiara13@gmail.com" target="_blank"
+                ><img src="icons/email.png" alt="gmail" width="20px"
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/tiara-permata-hati-87b5801ab"
+                target="_blank"
+                ><img src="icons/linkedin.png" alt="linkedin" width="20px"
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/tiarahataa/" target="_blank"
+                ><img src="icons/instagram.png" alt="instagram" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+
+      let acc = document.getElementsByClassName("arrow");
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+
+      let klik = function () {
+        let konfirmasi = confirm("Klik OK untuk melanjutkan");
+
+        if (konfirmasi == true) {
+          window.open("https://wa.me/6289519690349");
+        }
+      };
+    </script>
+  </body>
+</html>
